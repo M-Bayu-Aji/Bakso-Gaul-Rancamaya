@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bakso Gaul Rancamaya</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><span>Bakso</span> Gaul Rancamaya</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- hero -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>
+          <span>Bakso</span> enak, rasa juara, tiap suapan bikin nagih, pasti
+          abis tanpa sisa.
+        </h1>
+        <a href="#" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+    <!-- end hero -->
+
+    <!-- about  -->
+    <section id="about" class="about">
+      <h2><span>Ten</span>tang</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="./IMG/tentang.jpeg" alt="" />
+        </div>
+        <div class="content">
+          <h3>Selamat Datang Di Warung Bakso Solo!</h3>
+          <p>
+            Dengan cinta dan rasa senang, setiap bakso yang saya sajikan
+            memiliki sentuhan khusus yang membuatnya istimewa. Warung Bakso Solo
+            adalah tempat di mana saya mengekspresikan kecintaan saya terhadap
+            kuliner. Selamat menikmati setiap gigitan bakso yang saya sajikan!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- end about -->
+
+    <!-- menu -->
+    <section id="menu" class="menu">
+      <h2><span>Me</span>nu</h2>
+      <div class="menu-container">
+        <div class="bagian" data-name="c-1">
+          <img src="./IMG/bakso2.jpg" alt="" />
+          <h3>Bakso</h3>
+          <div class="price">$13.000</div>
+        </div>
+        <div class="bagian" data-name="c-2">
+          <img src="./IMG/mie ayam.jpeg2.jpg" alt="" />
+          <h3>Mie Ayam</h3>
+          <div class="price">$10.000</div>
+        </div>
+        <div class="bagian" data-name="c-3">
+          <img src="./IMG/mie ayam bakso 2.jpg" alt="" />
+          <h3>Mie Ayam Bakso</h3>
+          <div class="price">$15.000</div>
+        </div>
+      </div>
+    </section>
+    <!-- end menu -->
+
+    <!-- Kontak -->
+
+    <section class="contact" id="kontak">
+      <h2 id="contact"><span>Kontak</span> Us</h2>
+
+      <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63406.026010216396!2d106.7729252216797!3d-6.662208399999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c9e5a6774413%3A0x46810919a1931ed4!2sBakso%20Gaul%20Rancamaya!5e0!3m2!1sid!2sid!4v1704028043546!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+          <form action="">
+              <div class="input-group">
+                  <i class="ri-user-line"></i>
+                  <input type="text" placeholder="Nama">
+              </div>
+              <div class="input-group">
+                <i class="ri-phone-line"></i>
+                <input type="number" placeholder="No HP">
+              </div>
+              <div class="input-group">
+                  <i class="ri-message-2-line"></i>
+                  <input type="text" placeholder="Pesanan">
+                  <!-- <i class="ri-message-2-line"></i>
+                  <input type="email" placeholder="Email"> -->
+              </div>
+              <button type="submit" class="btn">Kirim Pesan</button>
+          </form>
+      </div>
+  </section>
+
+    <!-- end kontak -->
+
+    <!-- footer -->
+
+  <footer>
+    <div class="socials">
+      <a href="#"><i class="ri-whatsapp-fill"></i></a>
+      <a href="#"><i class="ri-instagram-fill"></i></a>
+      <a href="#"><i class="ri-facebook-box-fill"></i></a>
+    </div>
+
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="#">Bys_SCH</a>. &copy: 2023.</p>
+    </div>
+  </footer>
+
+    <!-- end footer -->
+    <script src="script.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

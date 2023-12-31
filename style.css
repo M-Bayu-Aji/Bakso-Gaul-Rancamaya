@@ -1,0 +1,471 @@
+:root {
+    --pri: #b6895b;
+    --bg: #010101;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--bg);
+    color: #fff;
+}
+
+/* --------------------------- navbar --------------------------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid #513c28;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 374109;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar .navbar-logo span {
+    color: var(--pri);
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    font-weight: 700;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--pri);
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: .5rem;
+    border-bottom: .1rem solid var(--pri);
+    transform: scaleX(0);
+    transition: .3s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 .5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--pri);
+}
+
+#hamburger {
+    display: none;
+}
+
+/* --------------------------- end navbar --------------------------- */
+
+/* ------------------------ Hero Konten --------------------------- */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(./IMG/bakso.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%,  rgba(255, 255, 255, 0) 59%);
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1 {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, .5);
+    line-height: 1.2;
+}
+
+.hero .content h1 span {
+    color: #aaa;
+}
+
+.hero .content .cta {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--pri);
+    border-radius: .5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, .5);
+    transition: .3s;
+}
+
+.hero .content .cta:hover,
+.contact .row form .btn:hover {
+    background-color: #fff;
+    color: #121212;
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, .5);
+    /* mix-blend-mode: difference; */
+}
+
+/* ------------------------ end Hero Konten --------------------------- */
+
+/* ------------------------ about ----------------------------------- */
+
+.about, .menu {
+    padding: 8rem 7% 5.5rem;
+}
+
+.about h2, .menu h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.about h2 span, .menu h2 span {
+    color: var(--pri);
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 30rem;
+}
+
+.about .row .about-img img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+    display: block;
+    margin-top: 70px;
+}
+
+.about .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p {
+    font-weight: 300;
+    margin-bottom: .8rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+/* ------------------------ end about ----------------------------------- */
+
+/*------------------------------ menu -------------------------------------*/
+
+.menu {
+    width: 90%;
+    margin: 0 auto 4rem;
+}
+
+.menu h2 {
+    margin-top: .8rem;
+    font-size: 3rem;
+}
+
+.menu .menu-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    gap: 30px;
+    background-color: #121212;
+}
+
+.menu .menu-container .bagian {
+    text-align: center;
+    padding: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    border: 1px solid var(--pri);
+}
+
+.menu .menu-container .bagian img {
+    width: 100%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.menu .menu-container .bagian img:hover {
+    transform: scale(.97);
+}
+
+.menu .menu-container .bagian h3, .menu .menu-container .bagian .price {
+    font-size: 1.5rem;
+}
+
+/*-------------------------- end menu -------------------------------------*/
+
+/* -------------------------------------- Kontak ------------------------------- */
+
+.contact {
+    padding: 3rem 7% 3rem;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.contact h2 span {
+    color: var(--pri);
+}
+
+.contact p {
+    text-align: center;
+    max-width: 38rem;
+    margin: auto;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #222;
+}
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+    /* height: 500px; */
+    margin: 10px 10px 0 20px;
+}
+
+.contact .row .input-group i {
+    font-size: 25px;
+    padding-right: 8px;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left: 2rem;
+    border: none;
+}
+
+.contact .row form .input-group input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+} 
+
+.contact .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: var(--pri);
+    cursor: pointer;
+    font-weight: 700;
+    transition: .3s;
+}
+
+/* --------------------------------------  End Kontak ------------------------------- */
+
+/* -------------------------------------- Footer ------------------------------------- */
+
+footer {
+    background-color: var(--pri);
+    text-align: center;
+    padding: .5rem 0 2rem;
+    margin-top: 3rem;
+}
+
+footer .socials {
+    padding: 1rem 0;
+}
+
+footer .socials a {
+    color: #fff;
+    margin: .5rem;
+    font-size: 25px;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+    color: var(--bg);
+}
+
+footer .links {
+    margin-bottom: 1.4rem;
+}
+
+footer .links a {
+    color: #fff;
+    padding: .7rem .3rem;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+footer .credit {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+footer .credit a {
+    color: var(--bg);
+    font-weight: 700;
+}
+
+/* --------------------------------- End Footer -------------------------------------- */
+
+
+/* Media Queries */
+
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #hamburger {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #121212;
+        width: 25rem;
+        height: 100vh;
+        transition: .8s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        font-size: 2rem;
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+    }
+
+    .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(.3);
+    }
+
+    .about .row {
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about .row .content {
+        padding: 0;
+    }
+
+    .about .row .content h3, p {
+        text-align: center;
+    }
+
+    .menu .menu-container {
+        flex-wrap: wrap;
+    }
+
+    .menu .menu-container .bagian img {
+        width: 75%;
+    }
+
+    .contact .row {
+        flex-wrap: wrap;
+    }
+
+    .contact .row .map {
+        height: 38rem;
+    }
+
+    .contact .row form {
+        padding-top: 10px;
+    }
+}
+
+/* HP */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
